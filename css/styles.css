@@ -405,8 +405,7 @@ img {
   display: flex;
   gap: 48px;
   flex-wrap: wrap;
-  /* flex-wrap: wrap;
-  gap: 48px 24px; */
+  /* gap: 48px 24px; */
 }
 
 .portfolio-menu-item {
@@ -969,5 +968,18 @@ input {
 
   .team-menu-item {
     flex-basis: calc((100% - 3 * 24px) / 4);
+  }
+
+  .portfolio {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .portfolio-menu {
+    gap: 48px 24px;
+  }
+
+  .portfolio-menu-item {
+    flex-basis: calc((100% - 2 * 24px) / 3);
   }
 }
