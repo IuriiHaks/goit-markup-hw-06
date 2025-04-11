@@ -147,24 +147,39 @@ img {
   background: #2e2f42;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 188px 0;
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/office.jpg);
+  /* padding: 188px 0; */
+  padding: 72px 0;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Mob-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
+@media screen and (min-rezolution: 2x),
+(-webkit-min-device-pixel-ratio: 2) {
+  .wrapper {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Mob-bg-2x.jpg);
+  }
+}
+
 .heading {
+  max-width: 216px;
+  font-size: 36px;
+  line-height: 1.11111;
+  margin-bottom: 72px;
+  margin-left: 24px;
+  margin-right: 24px;
+
   color: #fff;
   text-align: center;
-  font-size: 56px;
+  /* font-size: 56px; */
   font-weight: 700;
-  line-height: 107%;
+  /* line-height: 107%; */
   letter-spacing: 0.02em;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 64px;
-  max-width: 496px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  /* margin-bottom: 48px; */
+  /* max-width: 496px; */
 }
 
 .button {
@@ -878,6 +893,27 @@ input {
     padding-right: 16px;
   }
 
+  .wrapper {
+    padding: 112px 0;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Tab-bg.jpg);
+  }
+
+  @media screen and (min-rezolution: 2x) {
+    .wrapper {
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Tab-bg-2x.jpg);
+    }
+  }
+
+  .heading {
+    max-width: 496px;
+    margin-bottom: 36px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 56px;
+
+    color: #fff;
+  }
+
   .team .container {
     max-width: 584px;
   }
@@ -919,6 +955,17 @@ input {
     max-width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  .wrapper {
+    padding: 188px 0;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/office.jpg);
+  }
+
+  @media screen and (min-rezolution: 2x) {
+    .wrapper {
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/office\ 2x.jpg);
+    }
   }
 
   .content {
