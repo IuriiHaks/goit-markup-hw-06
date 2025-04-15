@@ -161,7 +161,6 @@ img {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  padding-right: 153px;
 }
 
 .mobile-link {
@@ -194,7 +193,8 @@ img {
 
 .wrapper {
   background: #2e2f42;
-  max-width: 1440px;
+  max-width: 320px;
+  /* max-width: 1440px; */
   margin: 0 auto;
   padding: 72px 0;
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Mob-bg.jpg);
@@ -215,9 +215,8 @@ img {
   font-size: 36px;
   line-height: 1.11111;
   margin-bottom: 72px;
-  margin-left: 24px;
-  margin-right: 24px;
-
+  margin-left: auto;
+  margin-right: auto;
   color: #fff;
   text-align: center;
   font-weight: 700;
@@ -916,8 +915,6 @@ input {
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
-    padding-left: 16px;
-    padding-right: 16px;
   }
 
   .menu-btn {
@@ -991,6 +988,7 @@ input {
   .address-link {
     color: #434455;
     display: block;
+    font-weight: 400;
     font-size: 12px;
     line-height: 1.16667;
     letter-spacing: 0.04em;
@@ -998,11 +996,13 @@ input {
   }
 
   .wrapper {
+    max-width: 768px;
     padding: 112px 0;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Tab-bg.jpg);
   }
 
-  @media screen and (min-rezolution: 2x) {
+  @media screen and (min-rezolution: 2x),
+  (-webkit-min-device-pixel-ratio: 2) {
     .wrapper {
       background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Tab-bg-2x.jpg);
     }
@@ -1079,7 +1079,7 @@ input {
   }
 
   .footer {
-    padding: 96px 108px;
+    padding: 96px 0;
   }
 
   .footer-container {
@@ -1087,6 +1087,7 @@ input {
     width: 768px;
     flex-wrap: wrap;
     gap: 72px 24px;
+    padding: 0 108px;
     justify-content: flex-start;
   }
 
@@ -1128,14 +1129,20 @@ input {
     margin-right: 76px;
   }
 
+  .heading {
+    margin-bottom: 48px;
+  }
+
   .wrapper {
+    max-width: 1440px;
     padding: 188px 0;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/office.jpg);
   }
 
-  @media screen and (min-rezolution: 2x) {
+  @media screen and (min-rezolution: 2x),
+  (-webkit-min-device-pixel-ratio: 2) {
     .wrapper {
-      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/office\ 2x.jpg);
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/office-2x.jpg);
     }
   }
 
